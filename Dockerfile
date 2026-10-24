@@ -9,7 +9,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY pyproject.toml .
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir ".[opus]"
 
 # Copy source
 COPY . .

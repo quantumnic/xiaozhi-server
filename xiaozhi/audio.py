@@ -20,7 +20,7 @@ try:
     import opuslib  # type: ignore[import-untyped]
 
     _opus_available = True
-except (ImportError, OSError):
+except Exception:  # ImportError, OSError, or opuslib "Could not find Opus library"
     logger.warning(
         "opuslib not available — Opus codec disabled. "
         "Audio will be treated as raw PCM. Install opuslib for proper Opus support."

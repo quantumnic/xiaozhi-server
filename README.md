@@ -25,7 +25,8 @@ cp .env.example .env
 
 # 3. Install
 python3 -m venv .venv && source .venv/bin/activate
-pip install -e .
+pip install -e ".[opus]"   # needs libopus (macOS: brew install opus, Debian: apt install libopus0)
+# macOS/Homebrew: export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib so opuslib finds libopus
 
 # 4. Run
 python server.py
