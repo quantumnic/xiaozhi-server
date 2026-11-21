@@ -1,5 +1,7 @@
 # xiaozhi-server
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/redbasecap)
+
 Self-hosted backend server for [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) devices. Use **OpenAI GPT-4o** or **Anthropic Claude** as the brain — no xiaozhi.me account required.
 
 ## What Is This?
